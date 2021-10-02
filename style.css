@@ -15,12 +15,13 @@
 }
 body {
     background-color: var(--backgroundcolor);
+    color: var(--lightcolor);
     overflow-x: hidden;
 }
 #splashScreen {
     width: 100%;
     height: 100vh;
-    background-color: #05060ffc;
+    background-color: var(--primarycolor);
     animation: splashScreen 3s .5s forwards cubic-bezier(0.4, 0, 1, 1);
     position: fixed;
     z-index: 9;
@@ -49,103 +50,131 @@ body {
     font-size: 12px;
     color: var(--lightcolor);
 }
-#navigation {
+#navContainer {
     width: 100%;
     height: 80px;
+    padding-top: 19px;
     background-color: var(--primarycolor);
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-    z-index: 8;
 }
-#navigationList1 {
+#navList {
     display: flex;
-    position: absolute;
-    left: 74px;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 36px;
-    line-height: 36px;
+    width: 86%;
+    height: 42px;
+    margin: auto;
+    justify-content: space-between;
+    z-index: 7;
 }
-#navigationList1 li {
+#navList1 {
+    display: flex;
+    line-height: 42px;
     list-style: none;
-    padding-right: 64px;
 }
-#navigationList1 a {
-    font-size: 10px;
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--lightcolor);
+#navList2 {
+    display: flex;
+    line-height: 42px;
+    list-style: none;
 }
-#navigationList1 a:hover {
-    text-decoration: underline;
-}
-#navigationList1 img {
+#navLogo {
     height: 36px;
+    margin: 3px 64px 3px 0px;
     user-select: none;
     -webkit-user-select: none;
 }
-#navigationList2 {
-    display: flex;
-    position: absolute;
-    right: 74px;
-    top: 50%;
-    transform: translateY(-50%);
+#navGame {
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
     color: var(--lightcolor);
-    height: 42px;
-    line-height: 42px;
+    margin-right: 64px;
 }
-#navigationList2 li {
-    list-style: none;
-    padding-left: 42px;
+#navSupport {
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--lightcolor);
+    margin-right: 64px;
 }
-#navigationList2 a {
+#navDiscord {
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--lightcolor);
+    margin-right: 64px;
+}
+#navStore {
     font-size: 10px;
     font-weight: bold;
     text-decoration: none;
     color: var(--lightcolor);
 }
-#navigationList2 a:hover {
-    text-decoration: underline;
-}
-#navigationList2 button {
+#navVote {
     font-size: 10px;
     font-weight: bold;
+    text-decoration: none;
+    color: var(--lightcolor);
+    margin: 0px 64px;
+}
+#navGame:hover {
+    text-decoration: underline;
+}
+#navSupport:hover {
+    text-decoration: underline;
+}
+#navDiscord:hover {
+    text-decoration: underline;
+}
+#navStore:hover {
+    text-decoration: underline;
+}
+#navVote:hover {
+    text-decoration: underline;
+}
+#navButton {
     height: 42px;
     width: 128px;
-    color: var(--lightcolor);
     background-color: var(--backuptextlight);
     border-style: none;
     border-radius: 3px;
+    text-align: center;
 }
-#navigationList2 button:hover {
+#navButton a {
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--lightcolor);
+    text-decoration: none;
+}
+#navButton:hover {
     background-color: var(--backuptext);
     cursor: pointer;
 }
-#navigationLogo {
+#mobilenavLogo {
     height: 36px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    display: none;
     user-select: none;
     -webkit-user-select: none;
+    display: none;
 }
-#navigationMenu {
+#mobilenavMenu {
     position: absolute;
     right: 3%;
     top: 50%;
     transform: translateY(-50%);
-    display: none;
     cursor: pointer;
+    display: none;
 }
-#navigationMenuClose {
+#mobilenavMenuClose {
     position: absolute;
     right: 3%;
     top: 50%;
     transform: translateY(-50%);
-    display: none;
     cursor: pointer;
+    display: none;
+    z-index: 8;
 }
 @keyframes NavMenuOpen {
     0% {visibility: visible; opacity: 1;}
@@ -155,158 +184,33 @@ body {
     0% {visibility: hidden; opacity: 0;}
     100% {visibility: visible; opacity: 1;}
 }
-#homeBackgroundContainer {
-    overflow: hidden;
-}
-#homeBackgroundImage {
-    height: 105vh;
-    user-select: none;
-    -webkit-user-select: none;
-    pointer-events: none;
-}
-#homeContent {
-    position: absolute;
-    left: 50%;
-    top: 80px;
-    transform: translateX(-50%);
-    width: 850px;
-}
-#homeContentTitle {
-    padding-top: 160px;
-    color: var(--lightcolor);
-    font-size: 42px;
-    font-weight: 700;
-    text-align: center;
-    text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
-                 10px 20px 5px rgba(0,0,0,0.05),
-                 -10px 20px 5px rgba(0,0,0,0.05);
-}
-#homeContentSubtitle {
-    padding: 164px 0px 20px 0px;
-    color: var(--lightcolor);
-    font-size: 13px;
-    text-align: center;
-    text-shadow: 0px 0px 6px rgba(0, 0, 0, .8);
-    line-height: 1.6;
-}
-#homeContentPlaynow {
-    width: 246px;
-    height: 54px;
-    font-size: 10px;
-    font-weight: bold;
-    color: var(--lightcolor);
-    background-color: var(--backuptextlight);
-    border-style: none;
-    border-radius: 3px;
-    margin: 0px auto 0px auto;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
-#homeContentPlaynow:hover {
-    background-color: var(--backuptext);
-    cursor: pointer;
-}
-#trailerContainer {
-    width: 850px;
-    height: 564px;
-    margin: auto;
-}
-#trailerTitle {
-    font-size: 24px;
-    font-weight: 800;
-    color: var(--lightcolor);
-    text-align: center;
-    padding-bottom: 62px;
-    text-shadow: 0px 15px 5px rgba(64, 64, 64, 0.1),
-                 10px 20px 5px rgba(64, 64, 64, 0.05),
-                 -10px 20px 5px rgba(64, 64, 64, 0.05);
-}
-#trailerVideo {
-    width: 672px;
-    height: 378px;
-    margin: 0px 89px;
-    border: none;
-    box-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1),
-                 10px 20px 5px rgba(0, 0, 0, 0.05),
-                 -10px 20px 5px rgba(0, 0, 0, 0.05);
-}
-@media screen and (max-width: 1000px) {
-    #navigation {
-        background-color: var(--primarycolor);
+@media screen and (max-width: 1015px) {
+    #mobilenavLogo {
+        display: block;
     }
-    #navigationList1 {
+    #mobilenavMenu {
+        display: block;
+    }
+    #navList {
         position: fixed;
         flex-direction: column;
+        padding: 32px 32px 32px 32px;
+        top: 0px;
         left: -250px;
-        padding: 40px 32px 32px 32px;
         height: 100vh;
         width: 250px;
         background-color: var(--primarycolor);
     }
-    #navigationList1 li {
-        padding-bottom: 18px;
-    }
-    #navigationList2 {
-        position: fixed;
+    #navList1 {
         flex-direction: column;
-        right: auto;
-        left: -250px;
-        top: auto;
-        bottom: 104px;
-        transform: translateY(0%);
     }
-    #navigationList2 button {
+    #navList2 {
+        flex-direction: column;
+    }
+    #navButton {
         width: 186px;
-        margin-top: 18px;
     }
-    #navigationLogo {
-        display: block;
-    }
-    #navigationMenu {
-        display: block;
-    }
-}
-@media screen and (max-width: 720px) {
-    #homeContent {
-        width: 85%;
-    }
-    #homeContentTitle {
-        padding-top: 116px;
-        font-size: 28px;
-        font-weight: 600;
-    }
-    #homeContentSubtitle {
-        padding: 164px 0px 22px 0px;
-    }
-    #trailerContainer {
-        width: 90%;
-    }
-    #trailerTitle {
-        font-size: 18px;
-        font-weight: 600;
-        padding-bottom: 64px;
-    }
-    #trailerVideo {
-        width: 100%;
-        height: 50%;
-        margin: auto;
-    }
-}
-@media screen and (max-height: 500px) {
-    #homeContentTitle {
-        padding-top: 42px;
-    }
-    #homeContentSubtitle {
-        padding: 64px 0px 12px 0px;
-    }
-    #trailerContainer {
-        height: 90vh;
-    }
-    #trailerTitle {
-        padding-bottom: 32px;
-    }
-    #trailerVideo {
-        height: 75%;
+    #navVote {
+        margin: 0px;
     }
 }

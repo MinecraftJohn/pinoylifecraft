@@ -1,27 +1,26 @@
-var navigationMenu = document.getElementById("navigationMenu")
-var navigationMenuClose = document.getElementById("navigationMenuClose")
-var navigationList1 = document.getElementById("navigationList1")
-var navigationList2 = document.getElementById("navigationList2")
-var navigationLogo = document.getElementById("navigationLogo")
+var mobilenavMenu = document.getElementById("mobilenavMenu")
+var mobilenavMenuClose = document.getElementById("mobilenavMenuClose")
+var navList = document.getElementById("navList")
+var mobilenavLogo = document.getElementById("mobilenavLogo")
 
 // NAVIGATION MENU SCRIPT
-function navigationMenuFadeout () {
-    navigationMenu.style.animation = "NavMenuOpen .3s forwards"
-    navigationMenuClose.style.display = "block"
-    navigationMenuClose.style.animation = "NavMenuClose .3s forwards"
-    navigationLogo.style.visibility = "hidden"
-    navigationList1.style.transition = "left .3s"
-    navigationList1.style.left = "0px"
-    navigationList1.style.boxShadow = "rgb(0 0 0 / 50%) 200px 0px 0px 200px, rgb(0 0 0 / 50%) 850px 0px 0px 200px"
-    navigationList2.style.transition = "left .3s"
-    navigationList2.style.left = "-10px"
+function mobilenavMenuFadeout () {
+    mobilenavMenu.style.animation = "NavMenuOpen .3s forwards"
+    mobilenavMenuClose.style.display = "block"
+    mobilenavMenuClose.style.animation = "NavMenuClose .3s forwards"
+    mobilenavLogo.style.visibility = "hidden"
+    navList.style.transition = "left .3s"
+    navList.style.left = "0px"
+    navList.style.boxShadow = "rgb(0 0 0 / 50%) 200px 0px 0px 200px, rgb(0 0 0 / 50%) 850px 0px 0px 200px"
+    navList.style.transition = "left .3s"
+    navList.style.left = "-10px"
 }
-function navigationMenuFadein () {
-    navigationMenu.style.animation = "NavMenuClose .3s forwards"
-    navigationMenuClose.style.animation = "NavMenuOpen .3s forwards"
-    navigationMenuClose.style.visibility = "hidden"
-    navigationLogo.style.visibility = "visible"
-    navigationList1.style.left = "-250px"
-    navigationList1.style.boxShadow = "none"
-    navigationList2.style.left = "-250px"
+function mobilenavMenuFadein () {
+    mobilenavMenu.style.animation = "NavMenuClose .3s forwards"
+    mobilenavMenuClose.style.animation = "NavMenuOpen .3s forwards"
+    mobilenavMenuClose.style.visibility = "hidden"
+    mobilenavLogo.style.visibility = "visible"
+    navList.style.left = "-250px"
+    navList.style.boxShadow = "none"
+    navList.style.left = "-250px"
 }
