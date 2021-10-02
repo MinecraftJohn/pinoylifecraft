@@ -269,6 +269,10 @@ body {
                  -10px 20px 5px rgba(0, 0, 0, 0.05);
 }
 @media screen and (max-width: 1032px) {
+    #splashScreenGrid {
+        top: 40%;
+        transform: translate(-50%, 0%);
+    }
     #mobilenavLogo {
         display: block;
     }
@@ -278,7 +282,7 @@ body {
     #navList {
         position: fixed;
         flex-direction: column;
-        padding: 32px 32px 32px 32px;
+        padding: 32px 32px 100px 32px;
         top: 0px;
         left: -250px;
         height: 100vh;
@@ -303,12 +307,13 @@ body {
         width: 84%;
     }
     #homeContentTitle {
+        top: 30%;
         font-size: 28px;
         font-weight: 600;
         line-height: 1.6;
     }
     #homeContentButton {
-        bottom: 10%;
+        bottom: 13%;
         width: 100%;
     }
 }
@@ -317,8 +322,13 @@ body {
         width: 90%;
     }
     #homeContentTitle {
+        top: 30%;
         font-size: 24px;
         font-weight: 500;
         line-height: 1.6;
+    }
+    #homeContentButton {
+        bottom: 15%;
+        width: 100%;
     }
 }
