@@ -22,13 +22,16 @@ body {
     width: 100%;
     height: 100vh;
     background-color: var(--primarycolor);
-    animation: splashScreen 3s .5s forwards cubic-bezier(0.4, 0, 1, 1);
     position: fixed;
     z-index: 9;
 }
 @keyframes splashScreen {
-    90% {height: 100vh;}
+    0% {height: 100vh;}
     100% {height: 0vh; visibility: hidden;}
+}
+@keyframes splashScreenout {
+    0% {height: 0vh; visibility: visible;}
+    100% {height: 100vh;}
 }
 #splashScreenGrid {
     display: grid;
@@ -133,18 +136,19 @@ body {
     text-decoration: underline;
 }
 #navButton {
+    padding: 2px;
     height: 42px;
     width: 128px;
     background-color: var(--backuptextlight);
     border-style: none;
     border-radius: 3px;
-    text-align: center;
-}
-#navButton a {
     font-size: 10px;
     font-weight: bold;
     color: var(--lightcolor);
     text-decoration: none;
+    -webkit-appearance: button;
+    appearance: button;
+    text-align: center;
 }
 #navButton:hover {
     background-color: var(--backuptext);

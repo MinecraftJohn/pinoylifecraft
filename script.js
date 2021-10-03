@@ -1,10 +1,19 @@
+var splashScreen = document.getElementById("splashScreen")
 var mobilenavMenu = document.getElementById("mobilenavMenu")
 var mobilenavMenuClose = document.getElementById("mobilenavMenuClose")
 var navList = document.getElementById("navList")
 var mobilenavLogo = document.getElementById("mobilenavLogo")
 var mobilenavMenuBackground = document.getElementById("mobilenavMenuBackground")
 
-// NAVIGATION MENU SCRIPT
+// PRE LOADER or SPLASH SCREEN
+window.addEventListener("load", function () {
+    splashScreen.style.animation = "splashScreen .2s forwards cubic-bezier(0.4, 0, 1, 1)"
+})
+function splashScreenout () {
+    splashScreen.style.animation = "splashScreenout .14s forwards cubic-bezier(0.4, 0, 1, 1)"
+}
+
+// NAVIGATION MENU
 function mobilenavMenuFadeout () {
     mobilenavMenu.style.animation = "NavMenuOpen .3s forwards"
     mobilenavMenuClose.style.display = "block"
