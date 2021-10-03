@@ -7,10 +7,10 @@ var mobilenavMenuBackground = document.getElementById("mobilenavMenuBackground")
 
 // PRE LOADER or SPLASH SCREEN
 window.addEventListener("load", function () {
-    splashScreen.style.animation = "splashScreen .2s forwards cubic-bezier(0.4, 0, 1, 1)"
+    splashScreen.style.animation = "splashScreen .4s forwards cubic-bezier(0.4, 0, 1, 1)"
 })
 function splashScreenout () {
-    splashScreen.style.animation = "splashScreenout .14s forwards cubic-bezier(0.4, 0, 1, 1)"
+    splashScreen.style.animation = "splashScreenout .2s forwards cubic-bezier(0.4, 0, 1, 1)"
 }
 
 // NAVIGATION MENU

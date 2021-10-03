@@ -256,30 +256,70 @@ body {
     background-color: var(--backuptext);
     cursor: pointer;
 }
-#trailerContainer {
-    display: none;
-    width: 850px;
-    height: 564px;
-    margin: auto;
+#newsContainer {
+    background-color: var(--lightcolor);
+    border-radius: 6px;
+    padding: 64px 38px 72px 38px;
+    width: 1024px;
+    margin: 0px auto 64px auto;
+    position: relative;
 }
-#trailerTitle {
-    font-size: 24px;
-    font-weight: 800;
-    color: var(--lightcolor);
-    text-align: center;
-    padding-bottom: 62px;
-    text-shadow: 0px 15px 5px rgba(64, 64, 64, 0.1),
-                 10px 20px 5px rgba(64, 64, 64, 0.05),
-                 -10px 20px 5px rgba(64, 64, 64, 0.05);
+#newsHeader {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--backuptext);
+    padding-bottom: 64px;
+    text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+                 10px 20px 5px rgba(0,0,0,0.05),
+                 -10px 20px 5px rgba(0,0,0,0.05);
 }
-#trailerVideo {
-    width: 672px;
-    height: 378px;
-    margin: 0px 89px;
-    border: none;
-    box-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1),
-                 10px 20px 5px rgba(0, 0, 0, 0.05),
-                 -10px 20px 5px rgba(0, 0, 0, 0.05);
+#newsSeemore {
+    position: absolute;
+    right: 42px;
+    top: 68px;
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--backuptext);
+    text-decoration: none;
+    height: 32px;
+    line-height: 32px;
+}
+#newsSeemore span {
+    padding: 0px 8px 0px 8px;
+    transition: padding .4s;
+}
+#newsSeemore:hover span {
+    padding: 0px 0px 0px 16px;
+}
+#newsList {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    list-style: none;
+    transition: transform;
+}
+.newsLink {
+    color: var(--primarycolor);
+    text-decoration: none;
+}
+.newsThumbnail {
+    width: 277px;
+    border: 2px solid var(--primarycolor);
+    transition: transform .2s;
+}
+.newsLink:hover .newsThumbnail {
+    transform: scale(1.04);
+    border: 2px solid var(--backuptextlight);
+}
+.newsTitle {
+    padding-top: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    width: 277px;
+    transition: color .2s;
+}
+.newsLink:hover .newsTitle {
+    color: var(--backuptext);
 }
 @media screen and (max-width: 1032px) {
     #splashScreenGrid {
