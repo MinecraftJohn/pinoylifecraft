@@ -291,10 +291,8 @@ body {
 }
 #newsList {
     display: flex;
-    width: 100%;
     justify-content: space-between;
     list-style: none;
-    transition: transform;
 }
 .newsLink {
     color: var(--primarycolor);
@@ -325,7 +323,7 @@ body {
     align-items: center;
     background-color: var(--backgroundcolor);
     width: 100%;
-    padding: 42px 16px;
+    padding: 42px 32px;
 }
 #footerLogo {
     height: 42px;
@@ -412,14 +410,22 @@ body {
         padding: 0px 0px 0px 8px;
     }
     #newsList {
-        flex-direction: column;
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+    #newsList li {
+        display: inline;
+        margin-right: 32px;
+    }
+    #newsList3 {
+        margin-right: 0px !important;
+        white-space: normal !important;
     }
     .newsThumbnail {
-        width: 100%;
+        width: 277px;
     }
     .newsTitle {
-        text-align: center;
-        width: 100%;
+        width: 277px;
         padding-bottom: 32px;
         font-weight: 600;
         font-size: 16px;
