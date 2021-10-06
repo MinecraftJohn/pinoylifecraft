@@ -182,10 +182,9 @@ body {
     display: none;
 }
 #mobilenavMenuClose {
-    position: absolute;
-    right: 3%;
-    top: 50%;
-    transform: translateY(-50%);
+    position: fixed;
+    right: 24px;
+    top: 24px;
     cursor: pointer;
     display: none;
     z-index: 8;
@@ -343,11 +342,94 @@ body {
     color: #696a6f;
     padding-top: 48px;
 }
+#aboutContainer {
+    width: 1024px;
+    margin: auto;
+    padding: 64px 0px 72px;
+    position: relative;
+}
+#aboutTitle {
+    font-size: 28px;
+    font-weight: 700;
+    width: 75%;
+    text-align: center;
+    margin: auto;
+}
+#aboutDescription {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    width: 75%;
+    text-align: center;
+    margin: auto;
+    padding: 42px 0px 120px;
+    color: var(--secondarycolor);
+}
+#aboutImage {
+    margin-left: 64px;
+    cursor: help;
+}
+#aboutTrailer {
+    background-color: var(--primarycolor);
+    border: 2px solid var(--primarycolor);
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    bottom: 72px;
+    right: 64px;
+    overflow: hidden;
+}
+#aboutTrailer:hover {
+    border: 2px solid var(--backuptextlight);
+    cursor: pointer;
+}
+#aboutTrailerThumbnail {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    filter: opacity(.85);
+}
+#aboutTrailerButton {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 42px;
+    height: 42px;
+    background: radial-gradient(ellipse, var(--lightcolor)  50%, var(--backuptextlight));
+    border-radius: 50%;
+    transition: transform .2s;
+}
+#aboutTrailer:hover #aboutTrailerButton {
+    transform: translate(-50%, -50%) scale(1.1);
+    cursor: pointer;
+}
+#aboutTrailerVideoBG {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 10;
+    display: none;
+}
+#aboutTrailerVideoClose {
+    position: absolute;
+    right: 18px;
+    top: 18px;
+    cursor: pointer;
+}
+#aboutTrailerVideo {
+    width: 560px;
+    height: 315px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 @media screen and (max-width: 1032px) {
-    #splashScreenGrid {
-        top: 40%;
-        transform: translate(-50%, 0%);
-    }
     #mobilenavLogo {
         display: block;
     }
@@ -430,8 +512,34 @@ body {
         font-weight: 600;
         font-size: 16px;
     }
+    #aboutContainer {
+        width: 95%;
+    }
+    #aboutTitle {
+        width: 90%;
+    }
+    #aboutDescription {
+        width: 90%;
+        padding: 42px 0px 64px;
+    }
+    #aboutImage {
+        display: block;
+        margin: auto;
+    }
+    #aboutTrailer {
+        position: relative;
+        width: 400px;
+        bottom: auto;
+        right: auto;
+        top: 64px;
+        margin: auto;
+    }
 }
 @media screen and (max-width: 360px) {
+    #splashScreenGrid {
+        top: 40%;
+        transform: translate(-50%, 0%);
+    }
     #homeContent {
         width: 90%;
     }
@@ -448,5 +556,23 @@ body {
     .newsTitle {
         font-weight: 500;
         font-size: 13px;
+    }
+    #aboutTitle {
+        width: 95%;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    #aboutImage {
+        width: 80%;
+    }
+    #aboutTrailer {
+        width: 90%;
+    }
+    #aboutTrailerThumbnail {
+        height: 100%;
+    }
+    #aboutTrailerVideo {
+        width: 360px;
+        height: 202px;
     }
 }

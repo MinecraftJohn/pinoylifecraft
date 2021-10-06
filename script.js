@@ -4,6 +4,7 @@ var mobilenavMenuClose = document.getElementById("mobilenavMenuClose")
 var navList = document.getElementById("navList")
 var mobilenavLogo = document.getElementById("mobilenavLogo")
 var mobilenavMenuBackground = document.getElementById("mobilenavMenuBackground")
+var aboutTrailerVideoBG = document.getElementById("aboutTrailerVideoBG")
 
 // PRE LOADER or SPLASH SCREEN
 window.addEventListener("load", function () {
@@ -30,4 +31,12 @@ function mobilenavMenuFadein () {
     mobilenavLogo.style.visibility = "visible"
     navList.style.left = "-250px"
     mobilenavMenuBackground.style.display = "none"
+}
+
+// TRAILER (PLC SERVER)
+function trailerVideoOpen () {
+    aboutTrailerVideoBG.style.display = "block"
+}
+function trailerVideoClose () {
+    aboutTrailerVideoBG.style.display = "none"
 }
