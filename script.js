@@ -36,10 +36,10 @@ function mobilenavMenuFadein () {
 
 // TRAILER (PLC SERVER)
 function trailerVideoOpen () {
-    aboutTrailerVideo.setAttribute("src", "https://www.youtube.com/embed/ac5s6a5ZbWM?autoplay=1")
+    aboutTrailerVideo.src = "https://www.youtube.com/embed/ac5s6a5ZbWM?autoplay=1"
     aboutTrailerVideoBG.style.display = "block"
 }
 function trailerVideoClose () {
-    aboutTrailerVideo.setAttribute("src", "https://www.youtube.com/embed/ac5s6a5ZbWM?autoplay=0")
+    aboutTrailerVideo.src = "https://www.youtube.com/embed/ac5s6a5ZbWM?autoplay=0"
     aboutTrailerVideoBG.style.display = "none"
 }
