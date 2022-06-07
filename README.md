@@ -12,4 +12,4 @@ Players can visit this site to know what the server's information and features. 
 <br>
 Pinoy LifeCraft is a massive multiplayer online role playing game enhance Minecraft: Java Edition server. Minecrafters team up with online friends to survive, build, explore, fight the enemies and have fun using their chosen role. Whether you are building up your base, exploring the server worlds or completing game or daily quests, we have something for everyone here on Pinoy LifeCraft!<br>
 <br>
-This project is open to contributions!
+This project is has been migrated to <a href="https://github.com/pinoylifecraft/pinoylifecraft.github.io" target="_blank" rel="noopener noreferrer">Pinoy LifeCraft</a> and is open to contributions!
