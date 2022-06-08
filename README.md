@@ -1,4 +1,4 @@
-# The Pinoy LifeCraft Website Repository
+<h2>The Pinoy LifeCraft Website Repository</h2>
 <a href="https://github.com/pinoylifecraft/pinoylifecraft.github.io" target="_blank" rel="noopener noreferrer">
   <img src="https://raw.githubusercontent.com/MinecraftJohn/pinoylifecraft.com/0958ede8a2e6bc04098570925f212fb6b0fa498e/repository-status.svg">
 </a><br>
