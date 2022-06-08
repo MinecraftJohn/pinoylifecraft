@@ -1,7 +1,9 @@
 <h2>The Pinoy LifeCraft Website Repository</h2>
 <a href="https://github.com/pinoylifecraft/pinoylifecraft.github.io" target="_blank" rel="noopener noreferrer">
-  <img src="https://raw.githubusercontent.com/MinecraftJohn/pinoylifecraft.com/0958ede8a2e6bc04098570925f212fb6b0fa498e/repository-status.svg">
-</a><br>
+     <img src="https://raw.githubusercontent.com/MinecraftJohn/pinoylifecraft.com/4b71196b0bb165606f4121526113e31dfac3a7fb/resources/repositry-status/repository-status-migrated.svg">&nbsp;
+     <img src="https://raw.githubusercontent.com/MinecraftJohn/pinoylifecraft.com/4b71196b0bb165606f4121526113e31dfac3a7fb/resources/repositry-status/repository-status-abandoned.svg">
+</a>
+<br>
 <br>
 Site: https://www.pinoylifecraft.com/<br>
 <br>
